@@ -1,0 +1,19 @@
+# See the build system documentation in IDF programming guide
+# for more information about component CMakeLists.txt files.
+
+idf_component_register(
+    SRCS "main.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        bt
+        nvs_flash
+        esp_driver_uart
+        esp_driver_gpio
+        esp_wifi 
+        esp_netif 
+        esp_event 
+        esp_http_server 
+        esp_coex 
+        driver 
+        esp_timer
+)
